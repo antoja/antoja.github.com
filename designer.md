@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: designer
 group: navigation
 title: DESIGNER
 ---
