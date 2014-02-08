@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+    <!-- styles -->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+
+    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="col-md-12 column">
+	<div class="page-header">
+	  <img class="header" src="{{ ASSET_PATH }}/img/index_header.png" />
+	  <img class="logo index" src="{{ ASSET_PATH }}/img/logo.png" />
+	</div>
+	<nav class="navbar navbar-default">
+	  <ul class="nav navbar-nav">
+	    {% assign pages_list = site.pages %}
+            {% assign group = 'navigation' %}
+            {% include JB/pages_list %}
+	  </ul>
+	</nav>
+	<div class="container-narrow">
+	  <div class="row">
+	    <div class="content index">
+	      <img class="banner" src="{{ ASSET_PATH }}/img/index_image.jpg" />
+	      <div class="col-md-8">
+		{{ content }}
+	      </div>
+	      <div class="col-md-4">
+		<img class="name index" src="{{ ASSET_PATH }}/img/name.png" />
+	      </div>
+	    </div>
+	    <hr>
+	  </div>
+	  <div class="row">
+	    <footer>
+              <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+		with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+		and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+              </p>
+	    </footer>
+	  </div>
+
+	</div>
+      </div>
+    </div>
+
+    {% include JB/analytics %}
+  </body>
+</html>
