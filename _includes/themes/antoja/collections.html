@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-md-12">
+    {% for collection in site.data.collections %}
+    <h2><a href="{{ collection.link }}">{{ collection.name }}</a></h2>
+    <ul class="scroller">
+    {% for piece in collection.pieces %}
+    <li><img class="scroller" src="{{ piece.image }}" /></li>
+    {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+</div>
