@@ -4,7 +4,13 @@
       {{ content }}
     </div>
     <div class="col-md-4 sidebar">
-      {{ site.JB.news }}
+      <nav class="navbar sidebar-nav" role="navigation">
+	{% for item in site.data.news %}
+	<section>
+	  <img class="news" src="{{ item.image }}" />
+	</section>
+	{% endfor %}
+      </nav>
     </div>
   </div>
 </div>

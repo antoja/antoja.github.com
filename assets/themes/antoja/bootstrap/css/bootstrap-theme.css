@@ -399,6 +399,18 @@
     border-bottom: 0px;
 }
 
+.sidebar {
+    background-color: #E0E843;
+    padding: 30px;
+    margin-top: 20px;
+    border: 1px solid #999;
+    border-radius: 2px;
+}
+
+nav > section {
+    margin-bottom: 20px;
+}
+
 img.banner {
     width: 100%;
 }
@@ -441,4 +453,10 @@ img.name.common {
 .content.index {
     min-height: 850px;
     margin-bottom: 60px
+}
+
+img.news {
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 4px;
 }
