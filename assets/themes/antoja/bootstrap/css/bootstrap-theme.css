@@ -411,6 +411,10 @@ nav > section {
     margin-bottom: 20px;
 }
 
+img {
+    width: 100%;
+}
+
 img.banner {
     width: 100%;
 }
@@ -459,4 +463,20 @@ img.news {
     width: 100%;
     border: 1px solid #999;
     border-radius: 4px;
+}
+
+div.content > div.row > div.col-md-12 > ul {
+    list-style: none;
+    height: 200px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+div.content > div.row > div.col-md-12 > ul > li {
+    display: inline;
+}
+
+div.content > div.row > div.col-md-12 > ul > li > img {
+    height: 100%;
+    width: auto;
 }
