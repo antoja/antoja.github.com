@@ -1,7 +1,6 @@
 ---
 layout: index
-title: Hello World!
-tagline: Supporting tagline
+title: Antoja
 ---
 {% include JB/setup %}
 
