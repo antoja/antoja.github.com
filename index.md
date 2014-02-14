@@ -1,6 +1,7 @@
 ---
 layout: index
-title: Antoja
+group: navigation
+title: HOME
 ---
 {% include JB/setup %}
 
