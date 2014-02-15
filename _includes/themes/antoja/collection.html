@@ -6,38 +6,28 @@
       <h2>{{ collection.name }}</h2>
       <p>{{ collection.description }}</p>
 
-      <div id="collection-carousel" class="carousel slide" data-ride="carousel">
-
-	<!-- Slides -->
-	<div class="carousel-inner">
-	  {% for piece in collection.pieces %}
-	  <div class="item
-		      {% if forloop.first %}
-		      active
-		      {% endif %}">
-	    <img src="{{ piece.image }}" class="scroller" />
-	  </div>
-	  {% endfor %}
+	<div class="jcarousel" id="collection">
+	  <ul>
+	    {% for piece in collection.pieces %}
+	    <li class="jcarousel-item" index="{{ forloop.index }}">
+	      <img src="{{ piece.image }}" class="item-scroller" />
+	    </li>
+	    {% endfor %}
+	  </ul>
 	</div>
 
-	<!-- Controls -->
-	<a class="left carousel-control" href="#collection-carousel" data-slide="prev">
-	  <span class="glyphicon glyphicon-chevron-left"></span>
-	</a>
-	<a class="right carousel-control" href="#collection-carousel" data-slide="next">
-	  <span class="glyphicon glyphicon-chevron-right"></span>
-	</a>
+	<div class="jcarousel-pagination">
+	</div>
 
-      </div>
       {% endif %}
       {% endfor %}
     </div>
-    <div class="col-md-4 sidebar scroller">
+    <div class="col-md-4 sidebar collection">
       <nav class="navbar sidebar-nav">
 	{% for collection in site.data.collections %}
 	{% if collection.name == page.title %}
 	{% for piece in collection.pieces %}
-	<span class="scroller" slide-index="{{ forloop.index0 }}">{{ piece.name }}</span>
+	<span class="item-scroller" index="{{ forloop.index }}">{{ piece.name }}</span>
 	{% endfor %}
 	{% endif %}
 	{% endfor %}

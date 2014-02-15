@@ -1,21 +1,37 @@
 var ImageScroller = function() {
+    var cycle = function() {
+	$(".jcarousel").jcarousel("scroll", "+=1");
+    };
+
     var init = function() {
-	$("span.scroller").hide();
-	$("span.scroller[slide-index=0]").show();
+	$("span.item-scroller").hide();
+	$("span.item-scroller[index=1]").show();
 
-	$("#collection-carousel").on("slide.bs.carousel", function(event) {
-	    var active = $(event.target).find(".carousel-inner > .item.active");
-	    var from = active.index();
-	    var to = $(event.relatedTarget).index();
-
-	    $("span.scroller[slide-index=" + from + "]").hide();
-	    $("span.scroller[slide-index=" + to + "]").show();
+	$(".jcarousel").jcarousel({
+	    animation: 'slow',
+	    wrap: 'both',
+	    vertical: false
 	});
 
-	$(".carousel").carousel({
-	    interval: 3000,
-	    wrap: true
+	$(".jcarousel-pagination").jcarouselPagination({
+	    item: function(page) {
+		return '<a class="jcarousel-button" href="#' + page +'" index="' + page + '">' + page + '</a>';
+	    }
 	});
+
+	$(".jcarousel").on("jcarousel:targetin", "li", function(event, carousel) {
+	    var index = $(this).attr("index");
+	    $("span.item-scroller[index=" + index + "]").show();
+	    $(".jcarousel-button[index=" + index + "]").addClass("active");
+	});
+
+	$(".jcarousel").on("jcarousel:targetout", "li", function(event, carousel) {
+	    var index = $(this).attr("index");
+	    $("span.item-scroller[index=" + index + "]").hide();
+	    $(".jcarousel-button[index=" + index + "]").removeClass("active");
+	});
+
+	setInterval(cycle, 3000);
     };
 
     return {
