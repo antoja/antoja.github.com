@@ -1,4 +1,6 @@
 var ImageScroller = function() {
+    var interval_id;
+
     var cycle = function() {
 	$(".jcarousel").jcarousel("scroll", "+=1");
     };
@@ -26,12 +28,16 @@ var ImageScroller = function() {
 	});
 
 	$(".jcarousel").on("jcarousel:targetout", "li", function(event, carousel) {
+	    clearInterval(interval_id);
+
 	    var index = $(this).attr("index");
 	    $("span.item-scroller[index=" + index + "]").hide();
 	    $(".jcarousel-button[index=" + index + "]").removeClass("active");
+
+	    interval_id = setInterval(cycle, 3000);
 	});
 
-	setInterval(cycle, 3000);
+	interval_id = setInterval(cycle, 3000);
     };
 
     return {

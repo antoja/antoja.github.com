@@ -475,6 +475,11 @@ img.designer {
     margin-bottom: 20px;
 }
 
+img.modal-image {
+    width: auto;
+    width: 100%;
+}
+
 #splash-modal {
     cursor: pointer;
 }
