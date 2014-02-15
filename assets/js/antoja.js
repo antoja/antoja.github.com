@@ -24,8 +24,5 @@ var ImageScroller = function() {
 }();
 
 $( document ).ready(function () {
-    // Bind the voting images to a function that tracks the votes
-    // $( ".btn" ).on("click", BallotMachine.vote);
-    // Fetch current votes (if any) from the server and update the page
     ImageScroller.init();
 });

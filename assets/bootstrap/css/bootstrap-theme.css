@@ -202,7 +202,7 @@
 }
 
 .navbar-default .navbar-nav > .active > a {
-    background-color: #E0E843
+    background-color: #ece44d
 }
 
 .navbar-brand,
@@ -400,7 +400,7 @@
 }
 
 .sidebar {
-    background-color: #E0E843;
+    background-color: #ece44d;
     padding: 30px;
     margin-top: 20px;
     border: 1px solid #999;
@@ -480,7 +480,7 @@ ul.scroller {
     height: 220px;
     overflow-x: auto;
     white-space: nowrap;
-    background-color: #E0E843;
+    background-color: #ece44d;
     padding: 15px 10px;
     border: 1px solid #999;
     border-radius: 2px;
@@ -502,7 +502,7 @@ ul.collection {
     list-style: none;
 
     overflow-x: auto;
-    background-color: #E0E843;
+    background-color: #ece44d;
     padding: 5px 10px;
     border: 1px solid #999;
     border-radius: 2px;
@@ -524,7 +524,7 @@ div.sidebar.scroller {
     padding-top: 25px;
     margin-top: 113px;
     margin-left: -15px;
-    background-color: #E0E843;
+    background-color: #ece44d;
     border-left: 0px;
 }
 
@@ -549,4 +549,31 @@ ul.collection > li > img {
     margin-top: 10px;
     border: 1px solid #999;
     border-radius: 2px;
+}
+
+#splash-modal {
+    cursor: pointer;
+}
+
+.modal-dialog {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-content {
+    height: 100%;
+    border-radius: 0;
+    background-color: #ece44d;
+    padding: 0;
+    margin: 0;
+}
+
+img.modal-image {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0px;
+    margin: 0px;
 }
