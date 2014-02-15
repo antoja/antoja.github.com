@@ -514,15 +514,14 @@ ul.collection > li {
     padding:  4px;
 }
 
-div.scroller {
-    min-height: 450px;
-    background: #fff;
-    padding-left: 25px;
-    padding-top: 25px;
+#collection-carousel {
     background-color: #000;
 }
 
 div.sidebar.scroller {
+    min-height: 450px;
+    padding-left: 25px;
+    padding-top: 25px;
     margin-top: 113px;
     margin-left: -15px;
     background-color: #E0E843;
@@ -538,9 +537,10 @@ span.scroller {
 img.scroller {
     display: block;
     width: auto;
-    max-height: 400px;
+    max-height: 450px;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px 0px;
 }
 
 ul.collection > li > img {

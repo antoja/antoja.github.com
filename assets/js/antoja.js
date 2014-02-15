@@ -1,34 +1,21 @@
-var ImageScroller = function(){
-    var pieces = [];
-
-    var cycle = function() {
-	var head = pieces.splice(0, 1)[0];
-	$(head.name).hide();
-	$(head.image).hide();
-	pieces.push(head);
-
-	$(pieces[0].name).show();
-	$(pieces[0].image).show();
-    };
-
+var ImageScroller = function() {
     var init = function() {
-	var images = $("img.scroller");
-	var names = $("span.scroller");
+	$("span.scroller").hide();
+	$("span.scroller[slide-index=0]").show();
 
-	var i;
+	$("#collection-carousel").on("slide.bs.carousel", function(event) {
+	    var active = $(event.target).find(".carousel-inner > .item.active");
+	    var from = active.index();
+	    var to = $(event.relatedTarget).index();
 
-	for ( i = 0; i < images.length; i += 1 ) {
-	    pieces.push({
-		name: names[i],
-		image: images[i]
-	    });
-	    if ( i != 0 ) {
-		$(names[i]).hide();
-		$(images[i]).hide();
-	    }
-	}
+	    $("span.scroller[slide-index=" + from + "]").hide();
+	    $("span.scroller[slide-index=" + to + "]").show();
+	});
 
-	setInterval(cycle, 3000);
+	$(".carousel").carousel({
+	    interval: 3000,
+	    wrap: true
+	});
     };
 
     return {
