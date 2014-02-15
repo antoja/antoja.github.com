@@ -5,20 +5,22 @@
       {% if collection.name == page.title %}
       <h2>{{ collection.name }}</h2>
       <p>{{ collection.description }}</p>
-      <ul class="collection">
+      <div class="scroller">
 	{% for piece in collection.pieces %}
-	<li><img class="collection" src="{{ piece.image }}" /></li>
+	<img class="scroller" src="{{ piece.image }}" />
 	{% endfor %}
-      </ul>
+      </div>
       {% endif %}
       {% endfor %}
     </div>
-    <div class="col-md-4 sidebar moodbar">
+    <div class="col-md-4 sidebar scroller">
       <nav class="navbar sidebar-nav">
-	{% for item in site.data.news %}
-	<section>
-	  <img class="news" src="{{ item.image }}" />
-	</section>
+	{% for collection in site.data.collections %}
+	{% if collection.name == page.title %}
+	  {% for piece in collection.pieces %}
+	  <span class="scroller">{{ piece.name }}</span>
+	  {% endfor %}
+	{% endif %}
 	{% endfor %}
       </nav>
     </div>

@@ -514,6 +514,35 @@ ul.collection > li {
     padding:  4px;
 }
 
+div.scroller {
+    min-height: 450px;
+    background: #fff;
+    padding-left: 25px;
+    padding-top: 25px;
+    background-color: #000;
+}
+
+div.sidebar.scroller {
+    margin-top: 113px;
+    margin-left: -15px;
+    background-color: #E0E843;
+    border-left: 0px;
+}
+
+span.scroller {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.scroller {
+    display: block;
+    width: auto;
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 ul.collection > li > img {
     height: 230px;
     width: auto;
