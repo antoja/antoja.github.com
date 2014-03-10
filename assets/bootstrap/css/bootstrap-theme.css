@@ -438,8 +438,9 @@ img.logo.index {
 
 img.name.index {
     position: absolute;
-    right: 30px;
+    right: 0px;
     top: 25px;
+    width: 90%;
 }
 
 img.logo.common {
@@ -603,4 +604,8 @@ img.collection-scroller {
     width: auto;
     max-height: 300px;
     padding: 10px 10px 10px 0px;
+}
+
+div.index.description {
+    margin-top: 30px;
 }
