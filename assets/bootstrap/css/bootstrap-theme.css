@@ -397,12 +397,12 @@
 
 .page-header {
     border-bottom: 0px;
+    margin-top: 20px;
 }
 
 .sidebar {
     background-color: #ece44d;
     padding: 30px;
-    margin-top: 20px;
     border: 1px solid #999;
     border-radius: 2px;
 }
@@ -431,7 +431,7 @@ img.logo.index {
     width: 30%;
     display: block;
     position: absolute;
-    top: 156px;
+    top: 134px;
     right: 50px;
     z-index: 1;
 }
@@ -446,7 +446,7 @@ img.logo.common {
     width: 30%;
     display: block;
     position: absolute;
-    top: 15px;
+    top: 6px;
     right: 50px;
     z-index: 1;
 }
@@ -528,6 +528,7 @@ img.modal-image {
 .jcarousel-pagination {
     margin-top: 10px;
     margin-left: 180px;
+    margin-bottom: 20px;
     display: block;
 }
 
@@ -565,10 +566,11 @@ div.sidebar.collection {
     min-width: 300px;
     padding-left: 25px;
     padding-top: 25px;
+    margin-top: 0px;
     background-color: #ece44d;
     border-left: 0px;
     position: absolute;
-    top: 73px;
+    top: 63px;
     left: 615px;
 }
 

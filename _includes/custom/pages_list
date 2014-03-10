@@ -1,0 +1,23 @@
+{% if page.url == "/index.html" %}
+<li class="active"><a href="/index.html" class="active">HOME</a></li>
+{% else %}
+<li><a href="/index.html">HOME</a></li>
+{% endif %}
+
+{% if page.url == "/designer.html" %}
+<li class="active"><a href="/designer.html" class="active">DESIGNER</a></li>
+{% else %}
+<li><a href="/designer.html">DESIGNER</a></li>
+{% endif %}
+
+{% if page.url == "/collections/index.html" %}
+<li class="active"><a href="/collections" class="active">COLLECTIONS</a></li>
+{% else %}
+<li><a href="/collections">COLLECTIONS</a></li>
+{% endif %}
+
+{% if page.url == "/store.html" %}
+<li class="active"><a href="/store.html" class="active">STORE</a></li>
+{% else %}
+<li><a href="/store.html">STORE</a></li>
+{% endif %}

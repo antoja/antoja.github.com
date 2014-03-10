@@ -1,35 +1,37 @@
 <div class="row">
-  <div class="col-md-12">
-      {% for collection in site.data.collections %}
-      {% if collection.name == page.title %}
-      <h2>{{ collection.name }}</h2>
-      <p>{{ collection.description }}</p>
+    <div class="col-md-12">
+        {% for collection in site.data.collections %}
+        {% if collection.name == page.title %}
+        <h2>{{ collection.name }}</h2>
 
-	<div class="jcarousel" id="collection">
-	  <ul>
-	    {% for piece in collection.pieces %}
-	    <li class="jcarousel-item" index="{{ forloop.index }}">
-	      <img src="{{ piece.image }}" class="item-scroller" />
-	    </li>
-	    {% endfor %}
-	  </ul>
-	</div>
+        <div class="jcarousel" id="collection">
+            <ul>
+                {% for piece in collection.pieces %}
+                <li class="jcarousel-item" index="{{ forloop.index }}">
+                    <img src="{{ piece.image }}" class="item-scroller" />
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
 
-	<div class="jcarousel-pagination">
-	</div>
-
-      {% endif %}
-      {% endfor %}
-    <div class="sidebar collection">
-      <nav class="navbar sidebar-nav">
-	{% for collection in site.data.collections %}
-	{% if collection.name == page.title %}
-	{% for piece in collection.pieces %}
-	<span class="item-scroller" index="{{ forloop.index }}">{{ piece.name }}</span>
-	{% endfor %}
-	{% endif %}
-	{% endfor %}
-      </nav>
-    </div>
-
+        <div class="jcarousel-pagination">
+        </div>
+<div class="col-md-8">
+        <p>{{ collection.description }}</p>
 </div>
+
+        {% endif %}
+        {% endfor %}
+        <div class="sidebar collection">
+            <nav class="navbar sidebar-nav">
+                {% for collection in site.data.collections %}
+                {% if collection.name == page.title %}
+                {% for piece in collection.pieces %}
+                <span class="item-scroller" index="{{ forloop.index }}">{{ piece.name }}</span>
+                {% endfor %}
+                {% endif %}
+                {% endfor %}
+            </nav>
+        </div>
+
+    </div>

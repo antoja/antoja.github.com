@@ -1,3 +1,5 @@
 - image: /assets/img/news/48064_10151520365343700_1669675656_n.jpg
+  description: Brief description of this news. This can be as big as you would like it to be.
 
 - image: /assets/img/news/934689_10151515336523700_2143937077_n.jpg
+  description: Brief description of this news too. This can as well be small or big.

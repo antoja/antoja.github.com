@@ -9,6 +9,7 @@
 	{% for item in site.data.news %}
 	<section>
 	  <img class="news" src="{{ item.image }}" />
+      <span class="news">{{ item.description }}</span>
 	</section>
 	{% endfor %}
       </nav>

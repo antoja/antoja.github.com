@@ -1,6 +1,6 @@
-- name: Nu Yok Jungle - Fall 2013
+- name: Concrete jungle Collection - Fall 2013
   link: fall2013.html
-  description: This is an overview of the Fall 2013 collection. It has to be one long block of text, so do not press enter on this line.
+  description: This collection was inspired by a summer in New York on 2013. Large buildings, avenues, streets, local stores, large shops, parks such as Bryant Park and the city's cultural diversity played an essential role in enriching my thoughts. Hardware materials adorn this collection.
   pieces:
     - image: /assets/img/collections/fall2013/antoja_02.png
       name: Awesome piece 1
@@ -34,8 +34,8 @@
       name: Awesome piece 8
       description: This is a detailed description of this particular piece.
 
-- name: Simple is Beautiful - Fall 2012
-  description: This is an overview of the Fall 2012 collection. It has to be one long block of text, so do not press enter on this line.
+- name: Corre lola Collection - Fall 2012
+  description: This collection was created in 2010 by the artist's passion for bicycles. Inspired by fixed bike night ride with his friends in San Juan PR. It is a unique piece made entirely handmade by the artist.
   link: fall2012.html
   pieces:
     - image: /assets/img/collections/fall2012/Abey_CC_internet_4.png
