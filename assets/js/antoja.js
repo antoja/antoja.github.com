@@ -45,6 +45,46 @@ var ImageScroller = function() {
     };
 }();
 
+var Store = function() {
+    var init = function() {
+	$(".store.toggle").each(function(index) {
+	    if ( parseInt($(this).attr("index")) === 1 ) {
+		$(this).show();
+	    }
+	    else {
+		$(this).hide();
+	    }
+	});
+
+	$(".store.collection").each(function(index) {
+	    if ( parseInt($(this).attr("index")) === 1 ) {
+		$(this).addClass("active");
+	    }
+
+	    var item_index = $(this).attr("index");
+	    var link = this;
+
+	    $(this).on('click', function() {
+		$(".store.toggle").each(function(index) {
+		    if ( $(this).attr("index") === item_index ) {
+			$(link).addClass("active");
+			$(this).show();
+		    }
+		    else {
+			$(link).removeClass("active");
+			$(this).hide();
+		    }
+		});
+	    });
+	});
+    };
+
+    return {
+	init: init
+    };
+}();
+
 $( document ).ready(function () {
     ImageScroller.init();
+    Store.init();
 });

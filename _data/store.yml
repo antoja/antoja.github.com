@@ -1,91 +1,59 @@
 - name: Concrete jungle Collection - Fall 2013
-  link: fall2013.html
-  description: This collection was inspired by a summer in New York on 2013. Large buildings, avenues, streets, local stores, large shops, parks such as Bryant Park and the city's cultural diversity played an essential role in enriching my thoughts. Hardware materials adorn this collection.
   pieces:
     - image: /assets/img/collections/fall2013/antoja_02.png
       name: Awesome piece 1
       description: This is a detailed description of this particular piece.
-      store_description: This is a detailed description of this piece for the store
-      price: $85
 
     - image: /assets/img/collections/fall2013/antoja_04.png
       name: Awesome piece 2
       description: This is a detailed description of this particular piece.
-      store_description: This is a detailed description of this piece for the store
-      price: $85
 
     - image: /assets/img/collections/fall2013/antoja_06.png
       name: Awesome piece 3
       description: This is a detailed description of this particular piece.
-      store_description: This is a detailed description of this piece for the store
-      price: $85
 
     - image: /assets/img/collections/fall2013/antoja_09.png
       name: Awesome piece 4
       description: This is a detailed description of this particular piece.
-      store_description: This is a detailed description of this piece for the store
-      price: $85
 
     - image: /assets/img/collections/fall2013/antoja_011.png
       name: Awesome piece 5
       description: This is a detailed description of this particular piece.
-      store_description: This is a detailed description of this piece for the store
-      price: $85
 
     - image: /assets/img/collections/fall2013/antoja_012.png
       name: Awesome piece 6
       description: This is a detailed description of this particular piece.
-      store_description: This is a detailed description of this piece for the store
-      price: $85
 
     - image: /assets/img/collections/fall2013/antoja_013.png
       name: Awesome piece 7
       description: This is a detailed description of this particular piece.
-      store_description: This is a detailed description of this piece for the store
-      price: $85
 
     - image: /assets/img/collections/fall2013/antoja_014.png
       name: Awesome piece 8
       description: This is a detailed description of this particular piece.
-      store_description: This is a detailed description of this piece for the store
-      price: $85
 
 - name: Corre lola Collection - Fall 2012
-  description: This collection was created in 2010 by the artist's passion for bicycles. Inspired by fixed bike night ride with his friends in San Juan PR. It is a unique piece made entirely handmade by the artist.
-  link: fall2012.html
   pieces:
     - image: /assets/img/collections/fall2012/Abey_CC_internet_4.png
       name: Awesome piece 1
       description: This is a detailed description of this particular piece.
-      store_description: This is a detailed description of this piece for the store
-      price: $85
 
     - image: /assets/img/collections/fall2012/Abey_CC18.png
       name: Awesome piece 2
       description: This is a detailed description of this particular piece.
-      store_description: This is a detailed description of this piece for the store
-      price: $85
 
     - image: /assets/img/collections/fall2012/Abey_CC23.png
       name: Awesome piece 3
       description: This is a detailed description of this particular piece.
-      store_description: This is a detailed description of this piece for the store
-      price: $85
 
     - image: /assets/img/collections/fall2012/Abey_CC39.png
       name: Awesome piece 4
       description: This is a detailed description of this particular piece.
-      store_description: This is a detailed description of this piece for the store
-      price: $85
 
     - image: /assets/img/collections/fall2012/Abey_CC48.png
       name: Awesome piece 5
       description: This is a detailed description of this particular piece.
-      store_description: This is a detailed description of this piece for the store
-      price: $85
 
     - image: /assets/img/collections/fall2012/Abey_CC50.png
       name: Awesome piece 6
       description: This is a detailed description of this particular piece.
-      store_description: This is a detailed description of this piece for the store
-      price: $85

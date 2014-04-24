@@ -609,3 +609,51 @@ img.collection-scroller {
 div.index.description {
     margin-top: 30px;
 }
+
+div.row.header {
+    margin-top: 17px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    color: #999;
+    background: #eee;
+}
+
+div.row.piece {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+li.store.collection {
+    cursor: pointer;
+    cursor: hand;
+}
+
+ul.store.collections {
+    list-style-type: none;
+    padding: 0px;
+}
+
+span.store.title {
+    font-size: 16px;
+    margin-left: -15px;
+}
+
+div.store.toggle {
+    margin-top: 38px;
+}
+
+span.store-buy {
+    background-color: #ece44d;
+    position: absolute;
+    margin-top: 40px;
+    padding: 10px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+span.store-price {
+    position: absolute;
+    margin-left: 20px;
+}
