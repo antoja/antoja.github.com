@@ -2,14 +2,14 @@
   <div class="col-md-3">
     <h4>COLLECTIONS</h4>
     <ul class="store collections">
-      {% for collection in site.data.collections %}
+      {% for collection in site.data.store %}
       <li class="store collection" index={{ forloop.index }}>{{ collection.name }}</li>
       {% endfor %}
     </ul>
   </div>
 
   <div class="col-md-9">
-    {% for collection in site.data.collections %}
+    {% for collection in site.data.store %}
     <div class="store toggle" index={{ forloop.index }}>
       <span class="store title">{{ collection.name }}</span>
       <div class="row header">
@@ -29,7 +29,7 @@
 	  <img src="{{ piece.image }}" class="store-item" />
 	</div>
 	<div class="col-md-5">
-	  <span class="store-description">{{ piece.store_description }}</span>
+	  <span class="store-description">{{ piece.description }}</span>
 	</div>
 	<div class="col-md-2">
 	  <div class="row">
