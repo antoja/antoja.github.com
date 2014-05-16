@@ -1,59 +1,101 @@
 - name: Concrete Jungle
   pieces:
-    - image: /assets/img/collections/fall2013/antoja_02.png
-      description: This is a detailed description of this particular piece.
-      price: $85
+    - id: cj01
+      paypal_id: H8Y46HFKKRYXN
+      image: /assets/img/collections/fall2013/antoja_02.png
+      name: Long Stamp Necklace
+      description: Piece made with fabric and gold plated chain.
+      price: $60
 
-    - image: /assets/img/collections/fall2013/antoja_04.png
-      description: This is a detailed description of this particular piece.
-      price: $85
+    - id: cj02
+      paypal_id: E6LNGX98LH4U6
+      image: /assets/img/collections/fall2013/antoja_04.png
+      name: Triangle Tree Necklace
+      description: Piece made with silver chain, and brass (triangles) and fantasy (pins) accents
+      price: $50
 
-    - image: /assets/img/collections/fall2013/antoja_06.png
-      description: This is a detailed description of this particular piece.
-      price: $85
+    - id: cj03
+      paypal_id: DCQBC26VB8A2J
+      image: /assets/img/collections/fall2013/antoja_06.png
+      name: Two Rope Necklace
+      description: Necklace made with silver and gold filled chain, fantasy accents, brass, rubber used to isolate electricity and hardware piece.
+      price: $55
 
-    - image: /assets/img/collections/fall2013/antoja_09.png
-      description: This is a detailed description of this particular piece.
-      price: $85
+    - id: cj04
+      paypal_id: Q78TYL9DFDJ9U
+      image: /assets/img/collections/fall2013/antoja_09.png
+      name: Cuerda Mode Necklace
+      description: Necklace made with stainless steel chain, brass pieces and copper piece used in windows
+      price: $45
 
-    - image: /assets/img/collections/fall2013/antoja_011.png
-      description: This is a detailed description of this particular piece.
-      price: $85
+    - id: cj05
+      paypal_id: FC6DYFN8ZYNGG
+      image: /assets/img/collections/fall2013/antoja_011.png
+      name: Angel Stone Ring
+      description: Silver ring hand assembled with a quarzo.
+      price: $35
 
-    - image: /assets/img/collections/fall2013/antoja_012.png
-      description: This is a detailed description of this particular piece.
-      price: $85
+    - id: cj06
+      paypal_id: KES886D72EP2Y
+      image: /assets/img/collections/fall2013/antoja_012.png
+      name: East Village Ring
+      description: Silver ring hand assembled with a pyrite
+      price: $35
 
-    - image: /assets/img/collections/fall2013/antoja_013.png
-      description: This is a detailed description of this particular piece.
-      price: $85
+    - id: cj07
+      paypal_id: H83BDFYSHKCKC
+      image: /assets/img/collections/fall2013/antoja_013.png
+      name: Taxi Earring
+      description: Earring made with fantasy accent (pin), silver chain, paper heart and bead.
+      price: $20
 
-    - image: /assets/img/collections/fall2013/antoja_014.png
-      description: This is a detailed description of this particular piece.
-      price: $85
+    - id: cj08
+      paypal_id: HTN4LLQBDUL4G
+      image: /assets/img/collections/fall2013/antoja_014.png
+      name: Ride the Bike Earring
+      description: Piece made with fantasy accent (pin), bead, gold filled chain, brass piece simulating a bike handle and rubber used to isolate electricity.
+      price: $20
+
+    - id: cj09
+      paypal_id: NC5H8M9M9R2UJ
+      image: /assets/img/collections/fall2013/antoja_014.png
+      name: Midtown Earring
+      description: Earring made with gold filled wire and a piece of rubber used to isolate electricity.
+      price: $20
 
 - name: Corre Lola
   pieces:
-    - image: /assets/img/collections/fall2012/Abey_CC_internet_4.png
-      description: This is a detailed description of this particular piece.
-      price: $85
+    - id: cl01
+      paypal_id: XTNZZGPVLHKSL
+      image: /assets/img/collections/fall2012/Abey_CC_internet_4.png
+      name: Stamp Ring
+      description: Ring made with plated silver or gold filled  chain.
+      price: $30
 
-    - image: /assets/img/collections/fall2012/Abey_CC18.png
-      description: This is a detailed description of this particular piece.
-      price: $85
+    - id: cl02
+      paypal_id: 9PHZE7BCKDSBC
+      image: /assets/img/collections/fall2012/Abey_CC18.png
+      name: Gold Ring
+      description: Ring plated in silver and gold filled.  Available only in size 7.
+      price: $20
 
-    - image: /assets/img/collections/fall2012/Abey_CC23.png
-      description: This is a detailed description of this particular piece.
-      price: $85
+    - id: cl03
+      paypal_id: V7TQB6FM6YZEY
+      image: /assets/img/collections/fall2012/Abey_CC23.png
+      name: Corre loLa Necklace
+      description: Totally handmade piece with wire and chain (silver or gold filled).
+      price: $35
 
-    - image: /assets/img/collections/fall2012/Abey_CC39.png
-      description: This is a detailed description of this particular piece.
-      price: $85
+    - id: cl04
+      paypal_id: X8C4Q3DLDYY8C
+      image: /assets/img/collections/fall2012/Abey_CC39.png
+      name: Bike Double Ring
+      description: Totally handmade ring with wire (silver or gold filled).
+      price: $20
 
-    - image: /assets/img/collections/fall2012/Abey_CC48.png
-      description: This is a detailed description of this particular piece.
-      price: $85
-
-    - image: /assets/img/collections/fall2012/Abey_CC50.png
-      description: This is a detailed description of this particular piece.
-      price: $85
+    - id: cl05
+      paypal_id: N8TBJS7JALY84
+      image: /assets/img/collections/fall2012/Abey_CC48.png
+      name: Crystal Earring
+      description: Totally handmade piece with wire (silver or gold filled) and crystal.
+      price: $20

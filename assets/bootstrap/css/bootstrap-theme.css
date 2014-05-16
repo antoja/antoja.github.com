@@ -645,7 +645,6 @@ div.store.toggle {
 }
 
 span.store-buy {
-    background-color: #ece44d;
     position: absolute;
     margin-top: 40px;
     padding: 10px;
@@ -656,4 +655,8 @@ span.store-buy {
 span.store-price {
     position: absolute;
     margin-left: 20px;
+}
+
+span.store-name {
+    font-weight: bold;
 }
